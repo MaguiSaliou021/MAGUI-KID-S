@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Galerie d'Images</h1>
+    <div class="gallery">
+        <div class="gallery-item" data-index="0">
+            <img src="https://picsum.photos/400/300?random=1" alt="Image 1" loading="lazy" onclick="openModal(this)">
+            <div class="image-caption">Paysage Montagneux</div>
+        </div>
+        <div class="gallery-item" data-index="1">
+            <img src="https://picsum.photos/400/300?random=2" alt="Image 2" loading="lazy" onclick="openModal(this)">
+            <div class="image-caption">Coucher de Soleil</div>
+        </div>
+        <div class="gallery-item" data-index="2">
+            <img src="https://picsum.photos/400/300?random=3" alt="Image 3" loading="lazy" onclick="openModal(this)">
+            <div class="image-caption">Océan Pacifique</div>
+        </div>
+        <div class="gallery-item" data-index="3">
+            <img src="https://picsum.photos/400/300?random=4" alt="Image 4" loading="lazy" onclick="openModal(this)">
+            <div class="image-caption">Forêt Automnale</div>
+        </div>
+        <div class="gallery-item" data-index="4">
+            <img src="https://picsum.photos/400/300?random=5" alt="Image 5" loading="lazy" onclick="openModal(this)">
+            <div class="image-caption">Ville Nocturne</div>
+        </div>
+        <div class="gallery-item" data-index="5">
+            <img src="https://picsum.photos/400/300?random=6" alt="Image 6" loading="lazy" onclick="openModal(this)">
+            <div class="image-caption">Désert Sableux</div>
+        </div>
+    </div>
+
+    <!-- Fenêtre modale -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content-wrapper">
+            <img id="modal-image" class="modal-content" alt="Agrandissement">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
